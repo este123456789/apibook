@@ -1,0 +1,22 @@
+npx prisma migrate dev
+
+
+Puedes usar una herramienta como Postman o cURL para probar tus rutas.
+
+
+
+POST /api/auth/register
+{
+  "action": "register",
+  "name": "John Doe",
+  "email": "john@example.com",
+  "password": "securepassword"
+}
+
+
+POST /api/auth/login
+{
+  "action": "login",
+  "email": "john@example.com",
+  "password": "securepassword"
+}
